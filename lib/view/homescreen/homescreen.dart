@@ -21,7 +21,7 @@ class _BottomnavigationState extends State<Bottomnavigation> {
     });
   }
 
-  final screens = [Home(), Search(), Library(),Premium()];
+  final screens = [Home(), Search(), Library(), Premium()];
 
   Widget miniPlayer() {
     Size deviceSize = MediaQuery.of(context).size;
@@ -113,13 +113,14 @@ class _BottomnavigationState extends State<Bottomnavigation> {
                   ),
                   label: "Library"),
               BottomNavigationBarItem(
-                  icon: ImageIcon(
-                    AssetImage(
-                      "assets/icons/Premium States.png",
-                    ),
-                    color: textcolor,
+                icon: ImageIcon(
+                  AssetImage(
+                    "assets/icons/SpotifyLogo1.png",
                   ),
-                  label: "Premium")
+                  color: textcolor,
+                ),
+                label: "Premium",
+              )
             ],
           ),
         ],
