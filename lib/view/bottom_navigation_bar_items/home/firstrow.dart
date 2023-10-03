@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/model/color_constant/colors.dart';
-import 'package:spotify_clone/view/homescreen/homescreen.dart';
+import 'package:spotify_clone/view/bottomnavigationbar/homescreen.dart';
 
 class Firstrow extends StatefulWidget {
   final BuildContext scaffoldContext;

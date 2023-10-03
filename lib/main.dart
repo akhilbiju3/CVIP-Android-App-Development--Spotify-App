@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_clone/view/signup/signuppage.dart';
+import 'package:spotify_clone/view/signuppages/signuppage.dart';
 
 void main() {
   runApp(const Spotifyclone());

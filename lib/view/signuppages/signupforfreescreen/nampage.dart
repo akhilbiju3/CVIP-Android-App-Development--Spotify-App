@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/model/color_constant/colors.dart';
-import 'package:spotify_clone/view/signup/signupfree/nampage.dart';
+import 'package:spotify_clone/view/bottomnavigationbar/homescreen.dart';
 
-class Gender extends StatefulWidget {
-  const Gender({super.key});
+class Name extends StatefulWidget {
+  const Name({super.key});
 
   @override
-  State<Gender> createState() => _GenderState();
+  State<Name> createState() => _NameState();
 }
 
-class _GenderState extends State<Gender> {
+class _NameState extends State<Name> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +27,7 @@ class _GenderState extends State<Gender> {
               Row(
                 children: [
                   Text(
-                    "What's Your Gender?",
+                    "What's Your Name?",
                     style: TextStyle(
                         color: textcolor,
                         fontWeight: FontWeight.bold,
@@ -54,6 +54,12 @@ class _GenderState extends State<Gender> {
               SizedBox(
                 height: MediaQuery.of(context).size.height * .01,
               ),
+              Row(
+                children: [
+                  Text("This appears on your Spotify profile.",
+                      style: TextStyle(color: textcolor))
+                ],
+              ),
               SizedBox(
                 height: MediaQuery.of(context).size.height * .02,
               ),
@@ -67,7 +73,7 @@ class _GenderState extends State<Gender> {
                             borderRadius: BorderRadius.circular(30))),
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => Name(),
+                        builder: (context) => Bottomnavigation(),
                       ));
                     },
                     child: Text(

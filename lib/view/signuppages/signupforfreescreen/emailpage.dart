@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/model/color_constant/colors.dart';
-import 'package:spotify_clone/view/signup/signupfree/passwordpage.dart';
+import 'package:spotify_clone/view/signuppages/signupforfreescreen/passwordpage.dart';
 
 class Email extends StatefulWidget {
   const Email({super.key});

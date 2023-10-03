@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/model/color_constant/colors.dart';
-import 'package:spotify_clone/view/signup/signupfree/genderpage.dart';
+import 'package:spotify_clone/view/signuppages/signupforfreescreen/genderpage.dart';
 
 class Password extends StatefulWidget {
   const Password({super.key});

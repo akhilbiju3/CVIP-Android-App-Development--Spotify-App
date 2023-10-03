@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/model/color_constant/colors.dart';
-import 'package:spotify_clone/home.dart';
-import 'package:spotify_clone/view/bottomnavigation/home/premium.dart';
-import 'package:spotify_clone/view/bottomnavigation/library.dart';
-import 'package:spotify_clone/view/bottomnavigation/search.dart';
+import 'package:spotify_clone/view/bottom_navigation_bar_items/home/home.dart';
+import 'package:spotify_clone/view/bottom_navigation_bar_items/premium/premium.dart';
+import 'package:spotify_clone/view/bottom_navigation_bar_items/library/library.dart';
+import 'package:spotify_clone/view/bottom_navigation_bar_items/search/search.dart';
 
 class Bottomnavigation extends StatefulWidget {
   const Bottomnavigation({super.key});

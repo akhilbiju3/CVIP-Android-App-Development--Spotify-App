@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/model/color_constant/colors.dart';
 import 'package:spotify_clone/model/image_constant/image.dart';
-import 'package:spotify_clone/view/homescreen/homescreen.dart';
-import 'package:spotify_clone/view/signup/signupfree/emailpage.dart';
+import 'package:spotify_clone/view/bottomnavigationbar/homescreen.dart';
+import 'package:spotify_clone/view/signuppages/signupforfreescreen/emailpage.dart';
 
 class Signup extends StatefulWidget {
   const Signup({super.key});
