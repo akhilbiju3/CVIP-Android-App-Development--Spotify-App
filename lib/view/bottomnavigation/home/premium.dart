@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/model/color_constant/colors.dart';
-import 'package:spotify_clone/view/bottomnavigation/home/premium_constant/plancontainer.dart';
+import 'package:spotify_clone/view/bottomnavigation/home/premiumconstantcontainer.dart';
 
 class Premium extends StatelessWidget {
   const Premium({super.key});
