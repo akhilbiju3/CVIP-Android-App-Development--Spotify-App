@@ -55,8 +55,8 @@ class _SearchState extends State<Search> {
                         color: textcolor),
                   ),
                   Container(
-                    height: 50,
-                    width: 50,
+                    height: MediaQuery.of(context).size.height * .05,
+                    width: MediaQuery.of(context).size.width * .12,
                     decoration: BoxDecoration(
                         image: DecorationImage(
                             image:
@@ -66,24 +66,24 @@ class _SearchState extends State<Search> {
               ),
             ),
             SizedBox(
-              height: 5,
+              height: MediaQuery.of(context).size.height * .01,
             ),
             Container(
-              height: 50,
+              height: MediaQuery.of(context).size.height * .06,
               width: MediaQuery.of(context).size.width * .93,
               color: textcolor,
               child: Padding(
                 padding: const EdgeInsets.only(left: 8.0),
                 child: TextField(
                   decoration: InputDecoration(
-                      icon: Icon(Icons.search),
-                      labelText: "What do you want to listen to?",),
-                      
+                    icon: Icon(Icons.search),
+                    labelText: "What do you want to listen to?",
+                  ),
                 ),
               ),
             ),
             SizedBox(
-              height: 10,
+              height: MediaQuery.of(context).size.height * .02,
             ),
             Padding(
               padding: const EdgeInsets.only(left: 15),
@@ -100,7 +100,7 @@ class _SearchState extends State<Search> {
               ),
             ),
             SizedBox(
-              height: 15,
+              height: MediaQuery.of(context).size.height * .02,
             ),
             Padding(
               padding: const EdgeInsets.only(left: 15.0, right: 15),

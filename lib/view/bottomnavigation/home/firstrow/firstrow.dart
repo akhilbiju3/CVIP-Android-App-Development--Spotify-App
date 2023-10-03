@@ -3,7 +3,8 @@ import 'package:spotify_clone/model/color_constant/colors.dart';
 import 'package:spotify_clone/view/homescreen/homescreen.dart';
 
 class Firstrow extends StatefulWidget {
-  const Firstrow({super.key});
+  final BuildContext scaffoldContext;
+  const Firstrow({super.key, required this.scaffoldContext});
 
   @override
   State<Firstrow> createState() => _FirstrowState();
@@ -16,14 +17,19 @@ class _FirstrowState extends State<Firstrow> {
       padding: const EdgeInsets.only(left: 8.0),
       child: Row(
         children: [
-          CircleAvatar(
-            radius: 20,
-            backgroundColor: spotifyGreen,
-            child: Text(
-              "A",
-              style: TextStyle(color: backgroundcolor),
-            ),
-          ),
+          Builder(builder: (context) {
+            return InkWell(
+              onTap: () => Scaffold.of(widget.scaffoldContext).openDrawer(),
+              child: CircleAvatar(
+                radius: 20,
+                backgroundColor: spotifyGreen,
+                child: Text(
+                  "A",
+                  style: TextStyle(color: backgroundcolor),
+                ),
+              ),
+            );
+          }),
           Padding(
             padding: const EdgeInsets.only(left: 10.0),
             child: InkWell(
@@ -33,7 +39,7 @@ class _FirstrowState extends State<Firstrow> {
                 ));
               },
               child: Container(
-                height: 45,
+                height: MediaQuery.of(context).size.height * .055,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                   color: gridcolor,
@@ -51,7 +57,7 @@ class _FirstrowState extends State<Firstrow> {
           Padding(
             padding: const EdgeInsets.only(left: 10.0),
             child: Container(
-              height: 45,
+              height: MediaQuery.of(context).size.height * .055,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(20)),
                 color: gridcolor,
@@ -68,7 +74,7 @@ class _FirstrowState extends State<Firstrow> {
           Padding(
             padding: const EdgeInsets.only(left: 10.0),
             child: Container(
-              height: 45,
+              height: MediaQuery.of(context).size.height * .055,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(20)),
                 color: gridcolor,

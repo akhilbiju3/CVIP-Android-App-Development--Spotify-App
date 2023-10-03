@@ -28,7 +28,7 @@ class Premium extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(
-                    height: 50,
+                    height: MediaQuery.of(context).size.height * .1,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 15.0, top: 15),
@@ -56,7 +56,7 @@ class Premium extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 10,
+              height: MediaQuery.of(context).size.height * .02,
             ),
             Padding(
               padding: const EdgeInsets.only(left: 8.0),
@@ -75,7 +75,7 @@ class Premium extends StatelessWidget {
                       fontWeight: FontWeight.bold)),
             ),
             SizedBox(
-              height: 10,
+              height: MediaQuery.of(context).size.height * .02,
             ),
             Center(
               child: SizedBox(
@@ -96,7 +96,7 @@ class Premium extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 10,
+              height: MediaQuery.of(context).size.height * .01,
             ),
             Padding(
               padding: const EdgeInsets.only(left: 8.0),
@@ -116,15 +116,15 @@ class Premium extends StatelessWidget {
               ])),
             ),
             SizedBox(
-              height: 30,
+              height: MediaQuery.of(context).size.height * .03,
             ),
             joinPremiumContainer(context),
             SizedBox(
-              height: 20,
+              height: MediaQuery.of(context).size.height * .03,
             ),
             spotifyFreeContainer(context),
             SizedBox(
-              height: 20,
+              height: MediaQuery.of(context).size.height * .02,
             ),
             Padding(
               padding: const EdgeInsets.only(left: 25.0),
@@ -135,10 +135,10 @@ class Premium extends StatelessWidget {
                       fontWeight: FontWeight.bold)),
             ),
             SizedBox(
-              height: 20,
+              height: MediaQuery.of(context).size.height * .02,
             ),
             SizedBox(
-              height: 10,
+              height: MediaQuery.of(context).size.height * .01,
             ),
             Premiumcontainer(
                 plan: 'Mini',
@@ -149,7 +149,7 @@ class Premium extends StatelessWidget {
                 color3: Colors.blue,
                 color4: const Color.fromARGB(255, 40, 81, 114)),
             SizedBox(
-              height: 20,
+              height: MediaQuery.of(context).size.height * .02,
             ),
             Premiumcontainer(
                 plan: 'Premium Individual',
@@ -160,7 +160,7 @@ class Premium extends StatelessWidget {
                 color3: Colors.green,
                 color4: Colors.greenAccent),
             SizedBox(
-              height: 20,
+              height: MediaQuery.of(context).size.height * .02,
             ),
             Premiumcontainer(
                 plan: 'Premium Duo',
@@ -171,7 +171,7 @@ class Premium extends StatelessWidget {
                 color3: Color.fromARGB(255, 58, 109, 145),
                 color4: Color.fromARGB(255, 86, 107, 227)),
             SizedBox(
-              height: 20,
+              height: MediaQuery.of(context).size.height * .02,
             ),
             Premiumcontainer(
                 plan: 'Premium Family',
@@ -182,7 +182,7 @@ class Premium extends StatelessWidget {
                 color3: Color.fromARGB(255, 177, 42, 128),
                 color4: Color.fromARGB(255, 211, 12, 145)),
             SizedBox(
-              height: 20,
+              height: MediaQuery.of(context).size.height * .02,
             ),
             Premiumcontainer(
                 plan: 'Premium Student',
@@ -258,7 +258,7 @@ class Premium extends StatelessWidget {
                 color: textcolor,
               ),
               SizedBox(
-                height: 10,
+                height: MediaQuery.of(context).size.height * .01,
               ),
               Row(
                 children: [
@@ -277,7 +277,7 @@ class Premium extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: 10,
+                height: MediaQuery.of(context).size.height * .01,
               ),
               Row(
                 children: [
@@ -296,7 +296,7 @@ class Premium extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: 10,
+                height: MediaQuery.of(context).size.height * .01,
               ),
               Row(
                 children: [
@@ -315,7 +315,7 @@ class Premium extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: 10,
+                height: MediaQuery.of(context).size.height * .01,
               ),
               Row(
                 children: [

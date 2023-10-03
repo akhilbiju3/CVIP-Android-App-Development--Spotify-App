@@ -15,7 +15,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: navigationDrawer(),
+      drawer: Drawer(),
       backgroundColor: backgroundcolor,
       body: SingleChildScrollView(
         child: SafeArea(
@@ -24,11 +24,13 @@ class _HomeState extends State<Home> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: 40,
+                height: MediaQuery.of(context).size.height * 0.05,
               ),
-              Firstrow(),
+              Firstrow(
+                scaffoldContext: context,
+              ),
               SizedBox(
-                height: 10,
+                height: MediaQuery.of(context).size.height * 0.02,
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -43,8 +45,8 @@ class _HomeState extends State<Home> {
                       mainAxisExtent: 70),
                   itemBuilder: (context, index) {
                     return Container(
-                      height: 100,
-                      width: 200,
+                      height: MediaQuery.of(context).size.height * 0.1,
+                      width: MediaQuery.of(context).size.width * 0.4,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(5),
                         color: gridcolor,
@@ -52,8 +54,8 @@ class _HomeState extends State<Home> {
                       child: Row(
                         children: [
                           Container(
-                            height: 100,
-                            width: 75,
+                            height: MediaQuery.of(context).size.height * 0.1,
+                            width: MediaQuery.of(context).size.width * 0.18,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(5),
                                 image: DecorationImage(
@@ -76,7 +78,7 @@ class _HomeState extends State<Home> {
                 ),
               ),
               SizedBox(
-                height: 10,
+                height: MediaQuery.of(context).size.height * 0.01,
               ),
               Grid(
                 heading: 'Jump To Back',

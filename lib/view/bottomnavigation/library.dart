@@ -34,7 +34,7 @@ class _LibraryState extends State<Library> {
                           ),
                         ),
                         SizedBox(
-                          width: 10,
+                          width: MediaQuery.of(context).size.width * 0.02,
                         ),
                         Text(
                           "Your Library",
@@ -70,7 +70,7 @@ class _LibraryState extends State<Library> {
               ),
             ),
             Container(
-              height: 70,
+              height: MediaQuery.of(context).size.height * 0.08,
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: libraryContainer.length,
@@ -79,7 +79,7 @@ class _LibraryState extends State<Library> {
                         child: Row(
                           children: [
                             Container(
-                              height: 45,
+                              height: MediaQuery.of(context).size.height * 0.05,
                               decoration: BoxDecoration(
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)),
@@ -95,7 +95,7 @@ class _LibraryState extends State<Library> {
                               )),
                             ),
                             SizedBox(
-                              width: 5,
+                              width: MediaQuery.of(context).size.width * 0.02,
                             )
                           ],
                         ),
@@ -127,8 +127,8 @@ class _LibraryState extends State<Library> {
                     ),
                   ),
                   Container(
-                    height: 30,
-                    width: 30,
+                    height: MediaQuery.of(context).size.height * 0.05,
+                    width: MediaQuery.of(context).size.width * 0.1,
                     decoration: BoxDecoration(
                         image: DecorationImage(
                             image:
@@ -143,8 +143,8 @@ class _LibraryState extends State<Library> {
                   itemBuilder: (context, index) {
                     return ListTile(
                       leading: Container(
-                        height: 80,
-                        width: 70,
+                        height: MediaQuery.of(context).size.height * 0.4,
+                        width: MediaQuery.of(context).size.width * 0.2,
                         decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage(libraryImage[index]))),

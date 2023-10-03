@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/model/color_constant/colors.dart';
 
-
 class Albumscreen extends StatelessWidget {
   final String songName;
   final String artistName;
   final String imageLink;
   final List<dynamic> songNameList;
   final List<dynamic> artistNameList;
-   const Albumscreen(
+  const Albumscreen(
       {super.key,
       required this.songName,
       required this.artistName,
@@ -20,8 +19,8 @@ class Albumscreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        height: double.infinity,
-        width: double.infinity,
+        height: MediaQuery.of(context).size.height * 1,
+        width: MediaQuery.of(context).size.width * 1,
         decoration: BoxDecoration(
             gradient: LinearGradient(
                 colors: [
@@ -34,7 +33,7 @@ class Albumscreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             SizedBox(
-              height: 10,
+              height: MediaQuery.of(context).size.height * .04,
             ),
             Row(
               children: [
@@ -46,17 +45,17 @@ class Albumscreen extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 5,
+              height: MediaQuery.of(context).size.height * .03,
             ),
             Container(
-              height: 200,
-              width: 200,
+              height: MediaQuery.of(context).size.height * .25,
+              width: MediaQuery.of(context).size.width * .5,
               decoration: BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage(imageLink), fit: BoxFit.fill)),
             ),
             SizedBox(
-              height: 20,
+              height: MediaQuery.of(context).size.height * .03,
             ),
             Padding(
               padding: const EdgeInsets.only(left: 8.0),
@@ -78,7 +77,7 @@ class Albumscreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 10,
+                    height: MediaQuery.of(context).size.height * .01,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 5.0),
@@ -98,7 +97,7 @@ class Albumscreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 1,
+                    height: MediaQuery.of(context).size.height * .01,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(
@@ -157,7 +156,7 @@ class Albumscreen extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 20,
+              height: MediaQuery.of(context).size.height * .02,
             ),
             Padding(
               padding: const EdgeInsets.only(left: 18.0, right: 9),

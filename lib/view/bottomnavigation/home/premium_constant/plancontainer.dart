@@ -69,7 +69,7 @@ class _PremiumcontainerState extends State<Premiumcontainer> {
                 ],
               ),
               SizedBox(
-                height: 20,
+                height: MediaQuery.of(context).size.height * .02,
               ),
               Text(
                 widget.description,
@@ -81,11 +81,11 @@ class _PremiumcontainerState extends State<Premiumcontainer> {
                 textAlign: TextAlign.center,
               ),
               SizedBox(
-                height: 10,
+                height: MediaQuery.of(context).size.height * .02,
               ),
               SizedBox(
-                height: 50,
-                width: 150,
+                height: MediaQuery.of(context).size.height * .05,
+                width: MediaQuery.of(context).size.width * .3,
                 child: ElevatedButton(
                   onPressed: () {},
                   child: Text("VIEW PLANS",
@@ -98,7 +98,7 @@ class _PremiumcontainerState extends State<Premiumcontainer> {
                 ),
               ),
               SizedBox(
-                height: 20,
+                height: MediaQuery.of(context).size.height * .03,
               ),
               RichText(
                   text: TextSpan(

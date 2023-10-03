@@ -29,7 +29,7 @@ class _BottomnavigationState extends State<Bottomnavigation> {
       duration: const Duration(milliseconds: 500),
       color: Colors.grey.withOpacity(0.1),
       width: deviceSize.width,
-      height: 50,
+      height: deviceSize.height * .07,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -38,7 +38,7 @@ class _BottomnavigationState extends State<Bottomnavigation> {
               children: [
                 Image.asset("assets/images/grid1.png"),
                 SizedBox(
-                  width: 10,
+                  width: MediaQuery.of(context).size.width * 0.02,
                 ),
                 Text(
                   "Bad Guy",
@@ -73,6 +73,7 @@ class _BottomnavigationState extends State<Bottomnavigation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(),
       backgroundColor: backgroundcolor,
       body: screens[selection],
       bottomNavigationBar: Column(
